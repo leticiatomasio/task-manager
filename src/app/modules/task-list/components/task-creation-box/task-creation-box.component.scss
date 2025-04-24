@@ -1,0 +1,13 @@
+:host {
+    width: 100%;
+}
+
+.task-creation-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        flex-grow: 1;
+    }
+}

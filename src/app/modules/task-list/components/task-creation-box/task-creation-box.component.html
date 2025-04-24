@@ -1,0 +1,7 @@
+<div class="task-creation-box">
+    <input type="text" id="name" [(ngModel)]="taskName" placeholder="Enter a new task...">
+    <button
+        (click)="createTask()"
+        [disabled]="!taskName"
+    >Add task</button>
+</div>
