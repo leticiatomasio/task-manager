@@ -1,5 +1,5 @@
 <div class="task-creation-box">
-    <input type="text" id="name" [(ngModel)]="taskName" placeholder="Enter a new task...">
+    <input type="text" id="name" [(ngModel)]="taskName" placeholder="Enter a new task..." aria-label="Enter a new task name">
     <button
         (click)="createTask()"
         [disabled]="!taskName"

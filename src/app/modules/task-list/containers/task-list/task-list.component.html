@@ -25,12 +25,15 @@
             >
                 <div class="task-list__item-info">
                     <input 
-                        type="checkbox" 
+                        type="checkbox"
+                        name="task-check" 
+                        id="task-check"
                         [ngModel]="task.completed"
                         (ngModelChange)="toggleTaskCompletion(i)"
                         (click)="$event.stopPropagation()"
+                        (keypress)="toggleOnEnter($event, i)"
                     />
-                    <span>{{ task.name }}</span>
+                    <label for="task-check">{{ task.name }}</label>
                 </div>
                 <button danger (click)="deleteTask(i)">Delete</button>
             </div>

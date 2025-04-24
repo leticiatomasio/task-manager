@@ -67,10 +67,16 @@ export class TaskListComponent implements OnInit {
       })
   }
 
+  public toggleOnEnter(event: KeyboardEvent, taskIndex: number): void {
+    if(event.key === 'Enter') {
+      this.toggleTaskCompletion(taskIndex);
+    }
+  }
+
   private getTasks(): void {
     this.taskService.tasks$
       .subscribe(tasks => {
-          this.tasks = tasks;
-        })
+        this.tasks = tasks;
+      })
   }
 }
