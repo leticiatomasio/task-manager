@@ -1,0 +1,41 @@
+@import 'mixins';
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  color: var(--text-color)
+}
+
+input, select, button {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--neutral-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  
+  &:disabled {
+    opacity: .7;
+  }
+
+  &[danger] {
+    background-color: transparent;
+    border: none;
+    color: var(--danger-color-dark);
+
+    &:hover {
+      background-color: var(--danger-color-light);
+    }
+  }
+}
