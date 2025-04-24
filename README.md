@@ -1,6 +1,10 @@
 # TaskManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1. Please use a compatible version of Node.js.
+
+## Install dependencies
+
+Before running the project, run  `npm install` to install the project's dependencies locally.
 
 ## Development server
 
