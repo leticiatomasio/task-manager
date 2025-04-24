@@ -1,6 +1,6 @@
 # TaskManager
 
-This project is a daily task manager built with Angular CLI version 10.2.1. It supports keyboard navigation and uses semantic HTML to enhance accessibility for screen readers. Please ensure you're using a compatible version of Node.js.
+This project is a daily task manager built with Angular CLI version 10.2.1.  It is fully responsive across all devices, supports keyboard navigation, and uses semantic HTML to enhance accessibility for screen readers. Please ensure you're using a compatible version of Node.js.
 
 ## Install dependencies
 
